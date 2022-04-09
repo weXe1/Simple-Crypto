@@ -15,7 +15,7 @@ def usage():
     print("options:\n")
     print("\t--key <file name>\t\tfile containing a key")
     print("\t--pass <password>\t\tpassword for the private key")
-    print("\t-f <file name>\t\tfile to encrypt/decrypt")
+    print("\t-f <file name>\t\t\tfile to encrypt/decrypt")
     print("\t-o <output file>\t\toutput file\n")
     print("examples:\n")
     print(f"$ python {sys.argv[0]} keygen\n")
