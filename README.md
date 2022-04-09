@@ -17,7 +17,7 @@ options:
 
 	--key <file name>		file containing a key
 	--pass <password>		password for the private key
-	-f <file name>		  file to encrypt/decrypt
+	-f <file name>		  	file to encrypt/decrypt
 	-o <output file>		output file
 
 examples:
