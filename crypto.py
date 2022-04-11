@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import AES, PKCS1_OAEP
 from Crypto.Random import get_random_bytes
@@ -42,7 +43,7 @@ def set_password() -> str:
     passwd = None
     while True:
         print("Set password:")
-        passwd = pyip.inputPassword(colored('> ', 'yellow'))
+        passwd = pyip.inputPassword(colored('> ', 'yellow'), blank=True)
         if passwd == '':
             passwd = None
             break
@@ -172,6 +173,6 @@ if __name__ == '__main__':
         opts = getopt.getopt(sys.argv[2:], "o:f:", ['key=', 'pass='])
     except getopt.GetoptError as e:
         print(e)
-        sys.exit(-1)
+        usage()
 
     parse_argv(action, opts)
